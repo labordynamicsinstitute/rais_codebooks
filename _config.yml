@@ -1,4 +1,14 @@
 #theme: jekyll-theme-time-machine
 remote_theme: daattali/beautiful-jekyll@5.0.0
+title: "RAIS Codebooks"
 cover-img: /LDIimage_11.22.19_FINALv1.jpg
 gh-repo: labordynamicsinstitute/rais_codebooks
+navbar-links:
+  - text: "Home"
+    url: /
+  - text: "About"
+    url: https://ilr.cornell.edu/labor-dynamics-institute
+  - text: "Replication Lab"
+    url: /replicability-training
+  - text: "Data"
+    url: /data/
