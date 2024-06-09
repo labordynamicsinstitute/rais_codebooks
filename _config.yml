@@ -6,7 +6,7 @@ cover-img: /LDIimage_11.22.19_FINALv1.jpg
 gh-repo: labordynamicsinstitute/rais_codebooks
 navbar-links:
   "Main" : https://labordynamicsinstitute.github.io/
-  "Access at Cornell": /data-rais
+  "Access at Cornell": https://labordynamicsinstitute.github.io/data-rais
   "Codebooks": 
     - 2004: output/codebook_2004.html
     - 2005: output/codebook_2005.html
