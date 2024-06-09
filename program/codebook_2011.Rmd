@@ -1,0 +1,62 @@
+---
+title: "Codebook"
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+    code_folding: 'hide'
+    self_contained: true
+  pdf_document:
+    toc: yes
+    toc_depth: 4
+    latex_engine: xelatex
+---
+
+```{r initial_setup, include=T}
+knitr::opts_chunk$set(
+  warning = FALSE, # show warnings during codebook generation
+  message = FALSE, # show messages during codebook generation
+  error = TRUE, # do not interrupt codebook generation in case of errors,
+                # usually better for debugging
+  echo = TRUE  # show R code
+)
+ggplot2::theme_set(ggplot2::theme_bw())
+
+# set base directory
+basedir = "/home/ecco_rais/data/clean/RAIS-homogenized/output/"
+# adjust as necessary
+startyear = 2003
+endyear = 2004
+
+# libraries
+library(codebook)
+library(rio)
+
+# Start the codebook loop
+
+#for ( year in startyear:endyear) {
+year = "2011"
+    # for CSV
+    codebook_data <- fread(file.path(basedir, paste0("harmo_", year, ".csv")))
+
+    # omit the following lines, if your missing values are already properly labelled
+    codebook_data <- detect_missing(codebook_data,
+        only_labelled = TRUE, # only labelled values are autodetected as
+                              # missing
+        negative_values_are_missing = FALSE, # negative values are missing values
+        ninety_nine_problems = TRUE,   # 99/999 are missing values, if they
+                                      # are more than 5 MAD from the median
+    )
+
+    # If you are not using formr, the codebook package needs to guess which items
+    # form a scale. The following line finds item aggregates with names like this:
+    # scale = scale_1 + scale_2R + scale_3R
+    # identifying these aggregates allows the codebook function to
+    # automatically compute reliabilities.
+    # However, it will not reverse items automatically.
+    codebook_data <- detect_scales(codebook_data)
+    codebook_data <- as.data.table(codebook_data)
+    codebook(codebook_data)
+ # } # end year loop
+```
