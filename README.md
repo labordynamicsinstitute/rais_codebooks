@@ -1,4 +1,4 @@
-![Labor Dynamics Institute](LDIimage_11.22.19_FINALv1.jpg)
+![Labor Dynamics Institute](/LDIimage_11.22.19_FINALv1.jpg)
 
 # Labor Dynamics Institute: RAIS codebooks
 
