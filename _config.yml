@@ -1,14 +1,25 @@
 #theme: jekyll-theme-time-machine
-remote_theme: daattali/beautiful-jekyll@5.0.0
+remote_theme: daattali/beautiful-jekyll@6.0.1
 title: "RAIS Codebooks"
+author: "Heloisa de Paula"
 cover-img: /LDIimage_11.22.19_FINALv1.jpg
 gh-repo: labordynamicsinstitute/rais_codebooks
 navbar-links:
-  - text: "Home"
-    url: /
-  - text: "About"
-    url: https://ilr.cornell.edu/labor-dynamics-institute
-  - text: "Replication Lab"
-    url: /replicability-training
-  - text: "Data"
-    url: /data/
+  "About" : https://ilr.cornell.edu/labor-dynamics-institute
+  "Access at Cornell": /data-rais
+  "Codebooks": 
+    - 2004: output/codebook_2004.html
+    - 2005: output/codebook_2005.html
+    - 2006: output/codebook_2006.html
+    - 2007: output/codebook_2007.html
+    - 2008: output/codebook_2008.html
+    - 2009: output/codebook_2009.html
+    - 2010: output/codebook_2010.html
+    - 2011: output/codebook_2011.html
+    - 2012: output/codebook_2012.html
+    - 2013: output/codebook_2013.html
+    - 2014: output/codebook_2014.html
+    - 2015: output/codebook_2015.html
+    - 2016: output/codebook_2016.html
+    - 2017: output/codebook_2017.html
+  "RAIS no Brasil":  https://www.rais.gov.br/sitio/index.jsf
