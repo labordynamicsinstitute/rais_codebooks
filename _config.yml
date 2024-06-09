@@ -5,7 +5,7 @@ author: "Heloisa de Paula"
 cover-img: /LDIimage_11.22.19_FINALv1.jpg
 gh-repo: labordynamicsinstitute/rais_codebooks
 navbar-links:
-  "About" : https://ilr.cornell.edu/labor-dynamics-institute
+  "Home" : /
   "Access at Cornell": /data-rais
   "Codebooks": 
     - 2004: output/codebook_2004.html
@@ -23,3 +23,41 @@ navbar-links:
     - 2016: output/codebook_2016.html
     - 2017: output/codebook_2017.html
   "RAIS no Brasil":  https://www.rais.gov.br/sitio/index.jsf
+
+###########################
+# --- General options --- #
+###########################
+
+# Select which social network share links to show in posts
+#share-links-active:
+#  twitter: true
+#  facebook: true
+#  linkedin: true
+#  vk: false
+
+# How to display the link to your website in the footer
+# Remove this if you don't want a link in the footer
+# url-pretty: "MyWebsite.com"
+
+# Add the website title to the title of every page
+title-on-all-pages: true
+
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+excerpt_length: 50
+
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
+
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
+
+# Add a search button to the navbar
+post_search: true
+
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
+
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
